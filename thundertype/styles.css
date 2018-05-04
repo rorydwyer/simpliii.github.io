@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'thunder';
+  src: url('Thunder-Regular.otf');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "thunder";
+  overflow-x: hidden;
+  background-color: #4a546d;
+}
+
+#app {
+  position: relative;
+}
+
+#landing {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('assets/giphy.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landing-title {
+  color: #fff;
+}
+
+#landing-thunder {
+  font-size: 20vw;
+  margin: 0;
+}
+
+#landing-credits {
+  font-size: 3vw;
+}
+
+#gradient {
+  z-index: 100;
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  left: 0;
+  top: 90vh;
+  background: -moz-linear-gradient(top, rgba(25,41,89,0) 0%, rgba(25,41,89,1) 45%, rgba(25,41,89,1) 87%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(25,41,89,0) 0%,rgba(25,41,89,1) 45%,rgba(25,41,89,1) 87%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(25,41,89,0) 0%,rgba(25,41,89,1) 45%,rgba(25,41,89,1) 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00192959', endColorstr='#192959',GradientType=0 ); /* IE6-9 */
+}
+
+#description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background: rgb(25,41,89); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(25,41,89,1) 23%, rgba(0,0,0,1) 65%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(25,41,89,1) 23%,rgba(0,0,0,1) 65%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(25,41,89,1) 23%,rgba(0,0,0,1) 65%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192959', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  text-align: center;
+}
+
+#description p {
+  margin: 0 auto 0 auto;
+  padding-bottom: 0;
+  margin-top: 128px;
+  margin-bottom: 0;
+  font-size: 24pt;
+  color: #fff;
+  width: 720px;
+  text-align: left;
+}
+
+#description pre {
+  height: 115vh;
+  margin: 0;
+  font-family: 'thunder';
+  color: #fff;
+  font-size: 11vw;
+
+  display:inline-flex;
+  align-items: center;
+}
+
+
+
+
+#slideshow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 115vh;
+  background-image: url('assets/smoke.png');
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+
+}
+
+#slideshow span {
+  font-size: 35vw;
+  margin: 0;
+  padding-bottom: 3vh;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+#in-use {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.double {
+  display: flex;
+  flex-direction: row;
+}
+
+.vinyl {
+  margin: 4vh 2vw 2vh 4vw;
+  width: 44vw;
+  height: 62vh;
+  background-image: url('assets/vinyl.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.mug {
+  margin: 4vh 4vw 2vh 2vw;
+  width: 44vw;
+  height: 62vh;
+  background-image: url('assets/mug.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.mountains {
+  margin: 2vh 4vw;
+  width: 92vw;
+  height: 80vh;
+  background-image: url('assets/mountains-1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.magazine {
+  background-image: url('assets/game-magazine.jpg');
+  background-position: center;
+  background-size: cover;
+  margin: 2vh 4vw;
+  width: 92vw;
+  height: 96vh;
+}
+
+#type {
+  background-image: url('assets/clouds.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-text {
+  padding: 2vw 0;
+  width: 80vw;
+  height: 100vh;
+  font-size: 8vw;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-family: 'thunder';
+  display:inline-block;
+  vertical-align:middle;
+  resize: none;
+  overflow: hidden;
+}
+
+textarea:focus{
+    outline: none;
+}
