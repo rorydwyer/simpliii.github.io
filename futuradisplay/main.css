@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'futura-medium';
-  src: url("fonts/futura-Medium.ttf") format('truetype');
+  src: url("fonts/Futura-Medium.ttf") format('truetype');
 }
 
 @font-face {
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'futura-cond';
-  src: url("fonts/futura-CondensedExtraBold.ttf") format('truetype');
+  src: url("fonts/Futura-CondensedExtraBold.ttf") format('truetype');
 }
 
 /*
