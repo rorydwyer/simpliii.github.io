@@ -1,0 +1,712 @@
+/*// Rory Dwyer
+// 5/16/2017
+//Graphic Design Type lab*/
+
+
+
+
+@font-face {
+  font-family: 'futura-book';
+  src: url("fonts/futura-Book.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'futura-bookItalic';
+  src: url("fonts/futura-BookItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'futura-medium';
+  src: url("fonts/futura-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'futura-mediumItalic';
+  src: url("fonts/futura-Book.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'futura-bold';
+  src: url("fonts/futura-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'futura-cond';
+  src: url("fonts/futura-CondensedExtraBold.ttf") format('truetype');
+}
+
+/*
+html,body,div,span,applet,object,iframe,h1,h2,
+h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,
+big,cite,del,dfn,em,img,ins,kbd,q,s,samp,small,
+strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,
+dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+embed,figure,figcaption,footer,header,hgroup,input,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+border: 0;
+margin: 0;
+padding: 0;
+vertical-align: baseline;
+}*/
+
+
+html {
+  margin: 0;
+  padding: 0;
+  /*background-color: #E0E0E0;*/
+}
+
+
+body {
+  font-family: 'futura-book';
+  /*background-image: url("imgs/typeForeground.png");*/
+
+  margin: 0;
+  padding: 0;
+}
+
+/*###################
+#########  Title Page  ##########
+###################*/
+
+#title-page {
+  /*border: 5px red solid;*/
+  background-image: url(imgs/moon-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*position: relative;*/
+  height: 100vh;
+}
+
+.futura-front {
+  position: relative;
+  left: 18vw;
+}
+
+#futura-F {
+  z-index: 1000;
+  position: absolute;
+  font-size: 65vh;
+  bottom: 22vh;
+  left: 0vh
+}
+
+#futura-UTURA {
+  position: absolute;
+  font-size: 15vh;
+  left: 12.5vh;
+  top: 48vh;
+}
+
+#scroll-down {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+}
+
+.squares {
+  position: absolute;
+  right: 35vh;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-width: 8px;;
+  border-color: #E0E0E0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+
+  -webkit-transition: top 2s;
+
+  transition: top 2s;
+}
+
+#square-1 {
+  top: 295px;
+}
+
+#square-2 {
+  top: 295px;
+}
+
+#square-3 {
+  top: 295px;
+}
+
+#square-4 {
+  top: 295px;
+}
+
+#font-intro {
+  font-size: 5vh;
+  position: absolute;
+  top: 360px;
+  right: 5vh;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+
+
+/*###################
+#########  Title Credits page  ##########
+###################*/
+
+
+
+
+#title-credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  /*margin-top: 275px;*/
+  /*border: 5px blue solid;*/
+}
+
+#intro-credits {
+  text-align: center;
+}
+
+#futura-big {
+  font-family: futura-cond;
+  font-size: 15vw;
+}
+
+#futura-designed {
+  font-size: 2vw;
+  font-family: futura-cond;
+}
+
+#site-designed {
+  font-family: futura-bold;
+  font-size: 5vw;
+  margin-top: -10px;
+}
+
+#gd220 {
+  margin-top: -2.5vw;
+  font-family: futura-medium;
+  font-size: 4vw;
+}
+
+#rcc {
+  margin-top: -2vw;
+  font-family: futura-book;
+  font-size: 4vw;
+}
+
+#heidi {
+  margin-top: -2vw;
+  font-family: futura-book;
+  font-size: 3vw;
+}
+
+/*###################
+#########  Designer Page  ##########
+###################*/
+
+
+
+#designer-page {
+  /*border: 5px pink solid;*/
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+#designer-info {
+  position: relative;
+  padding: 30px 30px 30px 40px ;
+  width: 40%;
+  color: #FFFFFF;
+  font-size: 2vw;
+  background-color: #212121;
+  float: left;
+  /*left: 15%;
+  margin-bottom: 15%;*/
+  /*opacity: 0;*/
+}
+
+#paul-renner-img {
+  padding-right: 40px;
+  width: 55%;
+  height: auto;
+  float: right;
+}
+
+
+/*###################
+#########  Chars Page  ##########
+###################*/
+
+
+#chars-page {
+  /*border: 5px yellow solid;*/
+  position: relative;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#chars-list {
+  padding-left: 40px;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+}
+
+
+#type1 {
+  font-size: 2.697vw;
+}
+#type2 {
+  font-size: 2.376vw;
+}
+#type3 {
+  font-size: 2.023vw;
+}
+#type4 {
+  font-size: 1.702vw;
+}
+#type5 {
+  font-size: 1.392vw;
+}
+#type6 {
+  font-size: 1.071vw;
+}
+
+#type7 {
+  font-size: .75vw;
+}
+
+#chars-weight {
+  position: absolute;
+  /*margin-top: 8vw;*/
+  right: 40px;
+  bottom: 5vw;
+
+}
+
+#weight-title {
+  font-size: 1.5vw;
+  font-family: futura-bold;
+  text-decoration: underline;
+}
+
+#chars-weight li {
+  font-size: 1.5vw;
+  list-style: none;
+}
+
+#chars-weight ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#chars-weight ul:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
+
+/*###################
+#########  Book Page  ##########
+###################*/
+
+
+#BO-page {
+  font-family: futura-book;
+  margin-top: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*border: 5px orange solid;*/
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#B {
+  position: relative;
+}
+
+.book4 {
+  /*border: 5px red solid;*/
+  position: absolute;
+  font-size: 35vw;
+  /*float: left;*/
+}
+
+#book4-1 {
+  margin-left: 20vw;
+}
+
+#book4-2 {
+  margin-left: 15vw;
+  top: -3vw;
+  /*margin-bottom: 10vw;*/
+  /*left: 0px;;*/
+}
+
+#book4-3 {
+  margin-left: 20vw;
+}
+
+#book4-4 {
+  margin-left: 20vw;
+}
+
+#B-ook {
+  position: absolute;
+  font-size: 5vw;
+  margin-left: 37vw;
+  margin-top: 29.5vw;
+}
+
+#book-para {
+  font-size: 1.2vw;
+  top: 26vw;
+  /*margin-left: 34vw;*/
+  left: 51vw;
+  width: 15vw;
+  position: absolute;
+}
+
+#O-moon {
+  position: relative;
+}
+
+#O {
+
+  margin-right: 5vw;
+  font-size: 35vw;
+}
+
+#moon {
+  width: 19.5vw;
+  top: 12vw;
+  right:11vw;
+  position: absolute;
+}
+
+
+#moon-plaque {
+  margin-top: 100px;
+  max-width: 100vw;
+  height: 70vh;
+  background-image: url('imgs/MoonPlaque.jpg');
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+      /*###################
+#########  Book Italics  ##########
+      ###################*/
+
+
+#BI-page {
+  font-family: futura-bookItalic;
+  /*border: 5px green solid;*/
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#bi-para {
+  font-size: 1.5vw;
+  max-width: 35%;
+  margin-left: 7vw;
+  margin-top: 7vw;
+}
+
+#underline {
+  position: absolute;
+  margin-top: 2vw;
+  height: 3px;
+  width: 35%;
+  background-color: black;
+}
+
+#book-italics {
+  margin-right: 4vw;
+}
+
+
+.BI-big {
+  font-size: 30vw;
+}
+
+.BI-small {
+  font-size: 5vw;
+  margin-left: -3vw;
+}
+
+
+
+
+/*###################
+#########  Q A  ##########
+###################*/
+
+#QA-page {
+  overflow-x: hidden;
+  font-family: futura-medium;
+  /*border: 5px teal solid;*/
+  /*margin-top: 100px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#QA-Q {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#QA-Q-Q {
+  font-size: 50vw;
+  margin-left: -20vw;
+}
+
+#QA-Q-para {
+  position: absolute;
+  font-size: 1.2vw;
+  margin-top: 22vw;
+  left: 2vw;
+  width: 7vw;
+
+}
+
+#QA-A {
+  position: relative;
+}
+
+#QA-A-A {
+  font-size: 50vw;
+}
+
+#QA-AV {
+  font-size: 12.5vw;
+  position: absolute;
+  top: 24.6vw;
+  right: 15.3vw;
+}
+
+#QA-A-para {
+  font-size: 1.2vw;
+  text-align: center;
+  position: absolute;
+  bottom: 15vw;
+  right: 9.6vw;
+  max-width: 18vw;
+}
+
+#QA-med {
+  width: 100%;
+  position: absolute;
+  -webkit-transform: rotate(-65deg);
+          transform: rotate(-65deg);
+  font-size: 3vw;
+}
+
+
+/*###################
+#########  S pqbd  ##########
+###################*/
+
+#SPQ-page {
+
+  margin-top: 100px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*border: 5px brown solid;*/
+}
+
+#BIG-S {
+  position: relative;
+}
+
+#BIG-S-S {
+  margin-left: 3vw;
+  font-size: 45vw;
+}
+
+#BIG-S-O {
+  font-size: 10vw;
+  position: absolute;
+  top: 29vw;
+  left: 10.5vw;
+}
+
+#BIG-S-para-1 {
+  font-size: 1vw;
+  position: absolute;
+  max-width: 6vw;
+  top: 16.5vw;
+  left: 12vw;
+}
+
+#BIG-S-para-2 {
+  position: absolute;
+  font-size: 1vw;
+  bottom: 9.5vw;
+  left: 26vw;
+  width: 10vw;
+  max-width: 10vw;
+}
+
+#PQBD {
+  font-family: futura-bold;
+  position: relative;
+}
+
+#PQBD-BIG {
+  position: absolute;
+  font-size: 20vw;
+  bottom: 30vw;;
+  right: 40vw;
+}
+
+#PQBD-reflection {
+  text-align: center;
+}
+
+#PQBD-para {
+  font-size: 1vw;
+  position: relative;
+  top: 23.5vw;
+  right: 18vw;
+}
+
+#pq {
+  position: absolute;
+  top: -25vw;
+}
+
+#bd {
+  position: absolute;
+}
+
+
+
+
+/*###################
+#########  Using Futura  ##########
+###################*/
+
+#using-page {
+  overflow-x: hidden;
+  /*border: 5px gray solid;*/
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: baseline;
+              -ms-flex-align: baseline;
+                  align-items: baseline;
+}
+
+#AND {
+  margin-bottom: -9vw;
+  font-size: 35vw;
+  float: left;
+}
+
+#AND-para {
+  position: absolute;
+  font-size: 2vw;
+  top: 18vw;
+  left: 34vw;
+}
+
+#using-page img {
+  height: 12vw;
+  margin: 20px;
+}
+
+/*
+canvas {
+ cursor: crosshair;
+}
+
+#user-input {
+  border: 5px red solid;
+  width: 100%;
+  height: 100vh;
+
+  &:hover {
+   span {
+      display: none;
+    }
+  }
+}
+
+#user-input span {
+  font-family: futura-book;
+  font-size: 40px;
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  color: #000;
+  margin-top: -40px;
+  margin-left: -200px;
+}*/
+
+
+
+
+/*END OF PAGE*/
