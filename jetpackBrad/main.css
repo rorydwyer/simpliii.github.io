@@ -1,0 +1,233 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightseagreen;
+}
+
+#app {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+
+#maps{
+  width: 100%;
+  margin: 0;
+  padding : 20px 20px 15px 20px;
+  background-color: #333;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+  top: -16.5vh;
+  transition: all .5s;
+}
+
+#map-choice {
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#map-choice li {
+  text-align: center;
+  line-height: 5vh;
+  float: left;
+  height: 10vh;
+  width: 15vh;
+  padding: 5px;
+}
+
+#pull-down{
+  position:absolute;
+  width:20vh;
+  height: 20vh;
+  border-radius: 50%;
+  background-color: maroon;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+}
+
+#pull-down span {
+  position: absolute;
+  bottom: 3vh;
+}
+.maps-on {
+  top: 0vh !important;
+}
+
+#map-1 {
+  background: url('imgs/map1.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+#map-2 {
+  background: url('imgs/map2.jpg');
+  background-position: center center;
+  background-size: contain;
+}
+
+#map-3 {
+  background: url('imgs/map3.jpg');
+  background-position: center center;
+  background-size: contain;
+}
+
+#map-4 {
+  background: url('imgs/map4.jpg');
+  background-position: center center;
+  background-size: contain;
+}
+
+#map-5 {
+  background: url('imgs/map5.jpg');
+  background-position: center center;
+  background-size: contain;
+}
+
+#map-6 {
+  background: url('imgs/map6.jpg');
+  background-position: center center;
+  background-size: contain;
+}
+
+#map-7 {
+  background: url('imgs/map7.jpg');
+  background-position: center center;
+  background-size: contain;
+}
+
+#map-8 {
+  background-color: orangered;
+}
+
+#map-slider {
+  /*border: yellow 5px solid;*/
+  width: 45vw;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+#boardMap {
+  position: relative;
+  background-image: url('imgs/map1.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 40vw;
+  height: 40vw;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+
+.location-points {
+  position: absolute;
+  width: 20px;
+  height: auto;
+}
+
+#jetpackBrad {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: auto;
+  transition: all 2s;
+}
+
+#map-box{
+  display: flex;
+}
+
+
+#slider-v {
+  height: 20vw;
+  align-self: flex-end;
+}
+
+#options {
+}
+
+#slider-h {
+  width: 20vw;
+}
+
+#select-point {
+  list-style-type: none;
+  padding: 0;
+  height: 6vw;
+}
+
+#select-point li {
+  float: left;
+  padding: 1vw 2vw;
+  display: block;
+  color: white;
+}
+
+#select-A {
+  background-color: red;
+}
+
+#select-B {
+  background-color: green;
+}
+
+#select-C {
+  background-color: blue;
+}
+
+#select-D {
+  background-color: orangered;
+}
+
+#select-point li:hover{
+  background-color: #111;
+}
+
+#table-info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#coord-table, td {
+  border: black 2px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+#dist-table, td {
+  border: black 2px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+#log-table, td {
+  border: black 2px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+#log  {
+  height: 80vh;
+  max-width: 20vw;
+}
+
+#text-log {
+}

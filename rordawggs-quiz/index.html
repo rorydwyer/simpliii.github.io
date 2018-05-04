@@ -1,0 +1,69 @@
+<!-- //Rory Dwyer
+//Lab 2
+//5/10/2017 -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quizlets!!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="quizlets.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="starter-template">
+            <h1 id="title-header">Welcome to RorDawgg's Quizlet!</h1>
+            <p id="sub-title" class="lead">Made completely from copy and pasted Bootstrap.<br> Please enter your DoB to recive questions in your age group.</p>
+        </div>
+    </div>
+
+    <div id="main-menu"></div>
+
+    <div class="text-muted">
+        <div class="container">
+            <div class="row" id="quiz-selector"></div>
+        </div>
+    </div>
+
+    <div id="dob-selector" class="">
+        <label>Date of Birth</label><br>
+        <div class="form-group form-inline my-2 my-lg-0 align-self-center ">
+            <input type="date" class="form-control mr-sm-2" id="dob" placeholder="Date of Birth">
+            <button type="submit" class="btn btn-primary" onclick="validation()">Submit</button>
+        </div>
+    </div>
+
+    <div id="create-quiz">
+        <button type="button" class="btn btn-outline-success btn-lg" onclick="createNewQuiz()">Create your own quiz!</button>
+    </div>
+
+
+    <code id="code-snippet"></code>
+
+    <div id="quiz-creator"></div>
+
+    <div id="added-Qs"></div>
+
+    <div id="quizlet">
+        <div id="question"></div>
+        <div id="options"></div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

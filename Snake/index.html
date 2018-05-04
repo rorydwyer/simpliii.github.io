@@ -1,0 +1,42 @@
+<!-- Rory Dwyer
+     Lab: #1 snake Lab
+     Date: 2017/04/25 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Snake!</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="snake.js"></script>
+
+
+    <h2 id="score">Score: 0</h2>
+    <button id="reset" onclick="game.reset()">Reset</button>
+
+    <h1 id="msg"></h1>
+
+    <div class="arcade">
+        <img src="arcade.png" alt="">
+    </div>
+
+    <div id="settings">
+        <div class="growth">
+            <ul>
+                <li>
+                    <h2>Growth</h2></li>
+                <li><button onclick="snake.setGrowth(1)">Small</button></li>
+                <li><button onclick="snake.setGrowth(3)">Medium</button></li>
+                <li><button onclick="snake.setGrowth(8)">Fast</button></li>
+                <li><button onclick="snake.setGrowth(100)">Tron Snake!!!</button></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

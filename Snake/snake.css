@@ -1,0 +1,136 @@
+/* Rory Dwyer
+   Lab: #1 snake Lab
+   Date: 2017/04/25*/
+
+
+@font-face {
+    font-family: 'Pixeled';
+    src: url(Pixeled.woff);
+}
+
+@-moz-document url-prefix() {
+    body {
+        overflow: hidden;
+    }
+}
+
+html {
+    font-family: 'Pixeled';
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Pixeled';
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: linear-gradient( to bottom right, #2C3E50, #FD746C, #FF8235, #ffff1c, #92FE9D, #00C9FF, #a044ff, #e73827);
+    background-repeat: no-repeat;
+    background-size: 1000% 1000%;
+    animation: gradient 240s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%
+    }
+    50% {
+        background-position: 100% 100%
+    }
+    100% {
+        background-position: 0% 0%
+    }
+}
+
+
+#score {
+    z-index: 4;
+    top: 20px;
+    right: 50px;
+    float:right;
+    position: absolute;
+}
+
+#reset {
+    z-index: 90;
+    top: 100px;
+    right: 50px;
+    float:right;
+    position: absolute;
+}
+
+
+#msg {
+    color: white;
+    z-index: 5;
+    padding-top: 20%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+
+}
+
+#settings {
+    z-index: 10;
+    position: absolute;
+    float: left;
+    top: 20px;
+}
+
+button {
+    font-family: 'Pixeled';
+}
+
+#settings ul {
+    list-style:none;
+}
+
+.speed, .growth, .map-size {
+    display: inline-block;
+}
+
+table {
+    margin-top: 3.5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 36vw;
+    width: 50vw;
+    position: absolute;
+    z-index: 1;
+    border: 40px solid black;
+
+}
+
+.arcade img {
+    height: 50vw;
+    width: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    border-bottom: 300px solid #001994;
+}
+
+.arcade {
+    overflow-x: hidden;
+}
+
+.blank {
+    background-color: black;
+}
+
+.snake {
+    background-color: green;
+}
+
+.wall {
+    background-color: grey;
+}
+
+.fruit {
+    background-color: red;
+}

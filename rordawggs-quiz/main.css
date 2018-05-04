@@ -1,0 +1,53 @@
+/*//Rory Dwyer
+//Lab 2
+//5/10/2017*/
+
+.card {
+  margin: 20px 20px 20px 20px;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  /*flex-direction: column;*/
+}
+
+#quizlet {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#create-quiz {
+  margin-left: 20px;
+}
+
+#border-line {
+  border-top: 2px gray solid;
+  width: 80%;
+  margin: 30px auto 30px auto;
+}
+
+#dob-selector {
+  padding: 3rem 1.5rem;
+  /*text-align: center;*/
+}
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.new-question {
+  width: 80%;
+  margin: 30px auto 30px auto;
+  text-align: center;
+}
+
+#main-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
